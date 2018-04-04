@@ -1,0 +1,32 @@
+\hypertarget{index_intro_sec}{}\section{Description}\label{index_intro_sec}
+Engineering Drawing Software is a tool for generating orhotgraphic views of a 3D model and for generating 3D model from the orthographic views.
+
+This a documentation for Engineering Drawing Software Package
+
+Work by Pratyush Maini and Pranav Baurasia
+
+The Code has been Modularised into 9 C++ files and two header files.
+
+1-\/main.\+cpp\+:\+: The first file that is compiled and is basically used for mode selection and calling sub-\/functions. This enables users selection of a 2D window or 3D window.
+
+This also the point where we make use of th rendering libraries in Open\+GL and G\+L\+UT to draw objects and provide graphic user interface for the user. The same have been included in the libraries.
+
+File2\+D.\+h\+:\+: Contains all the classes that we require for the two dimensional interface, and also the window that is seen upon 2D transformation into a 3D object. The functions associated with each class are also flagged herein.
+
+2-\/two\+Dmain.\+cpp\+:\+: Functions in this file are called when the user decides to draw 2D orthographic projections of an object or import a file from his local database. The basic purpose of the functions in this file is to make a user select between drawing/importing a file.
+
+3-\/\+Line\+Drawing.\+cpp\+:\+: Contains all the functions that enable a user to create new nodes, join two nodes, delete nodes etc. while making a 2D diagram.
+
+4-\/\+Input\+For2\+D.\+cpp\+:\+: The user is given two choices of either loading a labeled file, or an unlabeled one, in whic case he is supposed to Add Labels through get\+Labels().
+
+5-\/3\+Dview\+Window.\+cpp\+:\+: The basic UI for viewing the 3D object in different ways as per the user\textquotesingle{}s convenience.
+
+File3\+D.\+h\+:\+: Contains all the classes that we require for the three dimensional interface, and also the window that is seen upon 3D transformation into a 2D object. The functions associated with each class are also flagged herein.
+
+6-\/three\+Dmain.\+cpp\+:\+: Functions in this file are called when the user decides to draw 3D view of an object or import a file from his local database. The basic purpose of the functions in this file is to make a user select between drawing/importing a file.
+
+7-\/\+Line\+Drawing\+For3\+Dto2\+D.\+cpp\+:\+: Contains all the functions that enable a user to create new nodes, join two nodes, delete nodes etc. while making a 3D diagram.
+
+8-\/\+Input\+For3\+Dto2\+D.\+cpp\+:\+: The user is given two choices of either loading a labeled file, or an unlabeled one, in whic case he is supposed to Add Labels through get\+Labels(), and mark all the Solid Planes.
+
+9-\/2\+Dview\+Window.\+cpp\+:\+: The basic UI for viewing the orthographic projections of the object in different ways as per the user\textquotesingle{}s convenience. 

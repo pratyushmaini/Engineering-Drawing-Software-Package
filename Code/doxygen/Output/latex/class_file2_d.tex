@@ -1,0 +1,83 @@
+\hypertarget{class_file2_d}{}\section{File2D Class Reference}
+\label{class_file2_d}\index{File2D@{File2D}}
+
+
+Basic datatype that implements the 2D projections.  
+
+
+
+
+{\ttfamily \#include $<$File2\+D\+\_\+3\+D.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_file2_d_ae28237705afb666932dfaeb78b7200a2}\label{class_file2_d_ae28237705afb666932dfaeb78b7200a2}} 
+\mbox{\hyperlink{class_file2_d_ae28237705afb666932dfaeb78b7200a2}{File2D}} ()
+\begin{DoxyCompactList}\small\item\em Default Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file2_d_ad10dfe2a6c2674869a319a0ca87d2608}\label{class_file2_d_ad10dfe2a6c2674869a319a0ca87d2608}} 
+void \mbox{\hyperlink{class_file2_d_ad10dfe2a6c2674869a319a0ca87d2608}{set\+View}} (int n, \mbox{\hyperlink{class_orthographic_view}{Orthographic\+View}} view)
+\begin{DoxyCompactList}\small\item\em Set Orthographic View -- 0,1,2 correspond to Front, Side, Top. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file2_d_af0bae21e86d3b5dd40fe1b296f62b0e9}\label{class_file2_d_af0bae21e86d3b5dd40fe1b296f62b0e9}} 
+\mbox{\hyperlink{class_orthographic_view}{Orthographic\+View}} \mbox{\hyperlink{class_file2_d_af0bae21e86d3b5dd40fe1b296f62b0e9}{get\+View}} (int n)
+\begin{DoxyCompactList}\small\item\em Get Orthographic View -- 0,1,2 correspond to Front, Side, Top. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_file2_d_a83bb7013172551ad378303df7f0001a9}{Makenode2D}} (\mbox{\hyperlink{class_view___node2_d}{View\+\_\+\+Node2D}} node)
+\begin{DoxyCompactList}\small\item\em Make a new Node in a 2D File. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file2_d_a08c97a91d761214d5bf0275570c244e4}\label{class_file2_d_a08c97a91d761214d5bf0275570c244e4}} 
+void \mbox{\hyperlink{class_file2_d_a08c97a91d761214d5bf0275570c244e4}{Solid\+Line2D}} (\mbox{\hyperlink{class_view___node2_d}{View\+\_\+\+Node2D}} node1, \mbox{\hyperlink{class_view___node2_d}{View\+\_\+\+Node2D}} node2)
+\begin{DoxyCompactList}\small\item\em make a solid line between two nodes \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file2_d_a4d0acd53a98b7734047b69597bbf7c2f}\label{class_file2_d_a4d0acd53a98b7734047b69597bbf7c2f}} 
+void \mbox{\hyperlink{class_file2_d_a4d0acd53a98b7734047b69597bbf7c2f}{Dashed\+Line2D}} (\mbox{\hyperlink{class_view___node2_d}{View\+\_\+\+Node2D}} node1, \mbox{\hyperlink{class_view___node2_d}{View\+\_\+\+Node2D}} node2)
+\begin{DoxyCompactList}\small\item\em make a dashed line between two nodes \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_file2_d_a516073c61faccb01eb4e9312a9653274}{get\+Labels}} ()
+\begin{DoxyCompactList}\small\item\em Get Labels for Unlabled 2D File. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file2_d_a5c99a9f241fcc1877dd18bc5b0d9527a}\label{class_file2_d_a5c99a9f241fcc1877dd18bc5b0d9527a}} 
+void \mbox{\hyperlink{class_file2_d_a5c99a9f241fcc1877dd18bc5b0d9527a}{delete\+Node}} (\mbox{\hyperlink{class_view___node2_d}{View\+\_\+\+Node2D}} node)
+\begin{DoxyCompactList}\small\item\em Delete a selected node from the 2D File. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_file2_d_a3f1062d4c68eba7a225152bf63832d8b}\label{class_file2_d_a3f1062d4c68eba7a225152bf63832d8b}} 
+\mbox{\hyperlink{class_orthographic_view}{Orthographic\+View}} \mbox{\hyperlink{class_file2_d_a3f1062d4c68eba7a225152bf63832d8b}{Frontview}}
+\begin{DoxyCompactList}\small\item\em This contains the Orthographic View of the Frontview of the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file2_d_ad5bf89a1555c22903c084ec9692015d8}\label{class_file2_d_ad5bf89a1555c22903c084ec9692015d8}} 
+\mbox{\hyperlink{class_orthographic_view}{Orthographic\+View}} \mbox{\hyperlink{class_file2_d_ad5bf89a1555c22903c084ec9692015d8}{Sideview}}
+\begin{DoxyCompactList}\small\item\em This contains the Orthographic View of the Sideview of the object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_file2_d_aa893807e0bfcd03ebc1c54607e961a65}\label{class_file2_d_aa893807e0bfcd03ebc1c54607e961a65}} 
+\mbox{\hyperlink{class_orthographic_view}{Orthographic\+View}} \mbox{\hyperlink{class_file2_d_aa893807e0bfcd03ebc1c54607e961a65}{Topview}}
+\begin{DoxyCompactList}\small\item\em This contains the Orthographic View of the Topview of the object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Basic datatype that implements the 2D projections. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_file2_d_a516073c61faccb01eb4e9312a9653274}\label{class_file2_d_a516073c61faccb01eb4e9312a9653274}} 
+\index{File2D@{File2D}!get\+Labels@{get\+Labels}}
+\index{get\+Labels@{get\+Labels}!File2D@{File2D}}
+\subsubsection{\texorpdfstring{get\+Labels()}{getLabels()}}
+{\footnotesize\ttfamily void File2\+D\+::get\+Labels (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get Labels for Unlabled 2D File. 
+
+Convert into labeled file by taking input \mbox{\Hypertarget{class_file2_d_a83bb7013172551ad378303df7f0001a9}\label{class_file2_d_a83bb7013172551ad378303df7f0001a9}} 
+\index{File2D@{File2D}!Makenode2D@{Makenode2D}}
+\index{Makenode2D@{Makenode2D}!File2D@{File2D}}
+\subsubsection{\texorpdfstring{Makenode2\+D()}{Makenode2D()}}
+{\footnotesize\ttfamily void File2\+D\+::\+Makenode2D (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_view___node2_d}{View\+\_\+\+Node2D}}}]{node }\end{DoxyParamCaption})}
+
+
+
+Make a new Node in a 2D File. 
+
+The first linked adjacency list is of those neighbours connected via a solid line
+
+The second linked adjacency list is of those neighbours connected via a dashed line 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/pratyushmaini/\+Desktop/\+Code/doxygen/src/File2\+D\+\_\+3\+D.\+h\item 
+/\+Users/pratyushmaini/\+Desktop/\+Code/doxygen/src/3-\/\+Line\+Drawing.\+cpp\item 
+/\+Users/pratyushmaini/\+Desktop/\+Code/doxygen/src/4-\/\+Input\+For2\+D.\+cpp\end{DoxyCompactItemize}
