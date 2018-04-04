@@ -19,7 +19,7 @@
 
 using namespace std;
 
-/*! \mainpage Engineering Drawing Software aka ED
+/*! \mainpage Engineering Drawing Software
  *
  * \section intro_sec Description
  *
