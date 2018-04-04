@@ -23,7 +23,7 @@ extern void home();
 static void open_dialog(GtkWidget* button, gpointer window)
 {
     GtkWidget *dialog;
-    dialog = gtk_file_chooser_dialog_new("Choose a file", GTK_WINDOW(window), GTK_FILE_CHOOSER_ACTION_OPEN, GTK_STOCK_OK, GTK_RESPONSE_OK, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, NULL);
+    dialog = gtk_file_chooser_dialog_new("Choose file", GTK_WINDOW(window), GTK_FILE_CHOOSER_ACTION_OPEN, GTK_STOCK_OK, GTK_RESPONSE_OK, GTK_STOCK_CANCEL, GTK_RESPONSE_CANCEL, NULL);
     gtk_widget_show_all(dialog);
 //  gtk_file_chooser_set_curr_fileent_folder(GTK_FILE_CHOOSER(dialog),"/");
     gtk_file_chooser_set_current_folder(GTK_FILE_CHOOSER(dialog), g_get_home_dir());
