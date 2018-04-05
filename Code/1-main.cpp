@@ -29,7 +29,7 @@ using namespace std;
   
   *Work by Pratyush Maini and Pranav Baurasia
   
-  *The Code has been Modularised into 9 C++ files and two header files.
+  *The Code has been Modularised into 10 C++ files and one header file.
 
   *1-main.cpp:: The first file that is compiled and is basically used for mode selection and calling sub-functions. This enables users selection of a 2D window or 3D window.
 
@@ -55,10 +55,11 @@ using namespace std;
 
   *9-2DviewWindow.cpp:: The basic UI for viewing the orthographic projections of the object in different ways as per the user's convenience.
 
+  *10-display_main.cpp:: This handles the rendering of all the windows including flushing and toggling between options
 
  */
 /** These are the live variables passed into GLUI ***/
- char *filename;
+char *filename;
 int mode = 0;
 int file_num = 0;
 int main_window;
