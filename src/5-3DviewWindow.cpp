@@ -56,12 +56,17 @@ void control_cb_view3D( int control )
   {
    int zero = main2DSave(NULL, NULL);
    Save3D_3Dview();
+   glui_view3D1 -> close();
+   glui_view3D -> close();
+    
   }
   else if ( control == Save2D )
   {
    int zero = main2DSave(NULL, NULL);
    Save2D_3Dview(); 
-  }
+   glui_view3D1 -> close();
+   glui_view3D -> close();
+      }
   else if (control == Reset){
     cout << "RESET" << endl;
     float temp_rotate[16] = { 1,0,0,0, 0,1,0,0, 0,0,1,0, 0,0,0,1 };
@@ -69,7 +74,8 @@ void control_cb_view3D( int control )
       {view_rotate[i] = temp_rotate[i];}
     
   }
-
+    glui_view3D1 -> close();
+    glui_view3D -> close();
 }
 
 void translate3Dview (float x_move, float y_move, float z_move){
